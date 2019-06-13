@@ -8,6 +8,7 @@ class Alumnos
 
     // object properties
     public $id_alumno;
+    public $id_usuario;
     public $nombre;
     public $apellidos;
     public $dni;

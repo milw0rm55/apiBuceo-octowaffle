@@ -37,11 +37,11 @@ if($num>0){
  
         $alumnos_item=array(
             "ID_Alumno" => $id_alumno,
-            "ID_Usuario" => $id_usuario
+            "ID_Usuario" => $id_usuario,
             "Nombre" => $nombre,
             "Apellidos" => $apellidos,
-            "Dni" => $Dni,
-            "Titulo" => html_entity_decode($titulo),
+            "Dni" => $dni,
+            "Titulo" => $titulo1,
             "Telefono" => $telefono,
             "Curso" => $curso,
             
