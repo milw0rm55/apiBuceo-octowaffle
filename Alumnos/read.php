@@ -45,7 +45,7 @@ if($num>0){
             
         );
  
-        array_push($alumnos_arr["records"], $alumnos_item);
+        array_push($alumnos_arr["alumnos"], $alumnos_item);
     }
     // set response code - 200 OK
     http_response_code(200);
