@@ -78,7 +78,7 @@ class Alumnos
     // used when filling up the update Alumnos form
     function readOne()
     {
-    echo "AAAAAAAAAAAAA x5";
+
         // query to read single record
         $query = "SELECT
                 *
@@ -86,7 +86,7 @@ class Alumnos
                alumnos
             WHERE
                 ID_Alumno = ?";
-
+        echo "AAAAAAAAAAAAA x6";
         // prepare query statement
         $stmt = $this->conn->prepare($query);
 
