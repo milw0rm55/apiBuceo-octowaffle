@@ -89,13 +89,13 @@ class Alumnos
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
-        echo "AAAAAAAAAAAAA x7" ;
+
         // bind id of Alumnos to be updated
         $stmt->bindParam(1, $this->ID_Alumno);
 
         // execute query
         $stmt->execute();
-
+        echo "AAAAAAAAAAAAA x8" ;
         // get retrieved row
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         echo $row;
