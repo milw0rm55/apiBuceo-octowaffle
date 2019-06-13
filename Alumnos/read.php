@@ -24,7 +24,7 @@ if($num>0){
     // alumnoss array
     $alumnos_arr=array();
     $alumnos_arr["records"]=array();
-    echo "AAAAAAAAAAaa ".var_dump($alumnos_arr);
+    echo "AAAAAAAAAAaa ". $alumnos_arr["records"];
     // retrieve our table contents
     // fetch() is faster than fetchAll()
     // http://stackoverflow.com/questions/2770630/pdofetchall-vs-pdofetch-in-a-loop
