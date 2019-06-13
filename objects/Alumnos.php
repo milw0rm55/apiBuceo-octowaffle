@@ -86,10 +86,10 @@ class Alumnos
                alumnos
             WHERE
                 ID_Alumno = ?";
-        echo "AAAAAAAAAAAAA x6";
+
         // prepare query statement
         $stmt = $this->conn->prepare($query);
-
+        echo "AAAAAAAAAAAAA x7" ;
         // bind id of Alumnos to be updated
         $stmt->bindParam(1, $this->ID_Alumno);
 
