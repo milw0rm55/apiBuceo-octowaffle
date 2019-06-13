@@ -17,7 +17,7 @@ $alumnos = new alumnos($db);
 // query alumnoss
 $stmt = $alumnos->read();
 $num = $stmt->rowCount();
-echo "AAAAAAAAAAaa ".$alumnos->read();
+echo "AAAAAAAAAAaa ".$num;
 // check if more than 0 record found
 if($num>0){
  
