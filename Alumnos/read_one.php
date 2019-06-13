@@ -13,10 +13,10 @@ include_once '../objects/Alumnos.php';
 // get database connection
 $database = new Database();
 $db = $database->getConnection();
-echo"AAAAAAAAAAAAAAAa";
+
 // prepare alumno object
 $alumno = new Alumnos($db);
-
+echo"AAAAAAAAAAAAAAAa x2";
 // set ID property of record to read
 $alumno->ID_Alumno = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
 // read the details of alumno to be edited
