@@ -37,6 +37,7 @@ if($num>0){
  
         $alumnos_item=array(
             "ID_Alumno" => $id_alumno,
+            "ID_Usuario" => $id_usuario
             "Nombre" => $nombre,
             "Apellidos" => $apellidos,
             "Dni" => $Dni,
