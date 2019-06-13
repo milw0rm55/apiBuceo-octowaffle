@@ -51,8 +51,7 @@ if($num>0){
     http_response_code(200);
  
     // show alumnoss data in json format
-    echo var_dump($alumnos_arr);
-    echo json_encode(alumnos_arr);
+    echo json_encode($alumnos_arr);
 }
 
 else{
