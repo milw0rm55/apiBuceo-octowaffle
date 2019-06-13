@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef36909b-d7d7-405b-bdb5-fb3e80842a0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Alumnos/ReadAlumnsInstructor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alumnos/read_one.php" beforeDir="false" afterPath="$PROJECT_DIR$/Alumnos/read_one.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/objects/Alumnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Alumnos.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,20 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alumnos/ReadAlumnsInstructor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="561">
               <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/objects/Alumnos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+            <state relative-caret-position="384">
+              <caret line="100" column="38" lean-forward="true" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -109,8 +107,8 @@
         <option value="$PROJECT_DIR$/Config/database.php" />
         <option value="$PROJECT_DIR$/Instructores/read.php" />
         <option value="$PROJECT_DIR$/Alumnos/read_one.php" />
-        <option value="$PROJECT_DIR$/objects/Alumnos.php" />
         <option value="$PROJECT_DIR$/Alumnos/ReadAlumnsInstructor.php" />
+        <option value="$PROJECT_DIR$/objects/Alumnos.php" />
       </list>
     </option>
   </component>
@@ -203,12 +201,12 @@
       <workItem from="1560242017332" duration="687000" />
       <workItem from="1560266430656" duration="1953000" />
       <workItem from="1560428496189" duration="15808000" />
-      <workItem from="1560450699662" duration="4403000" />
+      <workItem from="1560450699662" duration="4509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39252000" />
+    <option name="totallyTimeSpent" value="39358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -361,13 +359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/objects/Alumnos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -377,8 +368,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Alumnos/ReadAlumnsInstructor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="561">
           <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/Alumnos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="100" column="38" lean-forward="true" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
         </state>
       </provider>
     </entry>
