@@ -41,7 +41,7 @@ if($num>0){
             "Apellidos" => $Apellidos,
             "DNI" => $DNI,
             "Titulacion" => $Titulacion,
-            "telefono" => $Telefono,
+            "Telefono" => $Telefono,
             "disponibilidad" => $Disponibilidad,
 
         );
