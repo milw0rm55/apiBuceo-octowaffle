@@ -36,13 +36,13 @@ if($num>0){
         extract($row);
  
         $alumnos_item=array(
-            "id_alumno" => $id_alumno,
-            "nombre" => $nombre,
-            "apellidos" => $apellidos,
-            "dni" => $dni,
-            "titulo" => html_entity_decode($titulo),
-            "telefono" => $telefono,
-            "curso" => $curso,
+            "ID_Alumno" => $id_alumno,
+            "Nombre" => $nombre,
+            "Apellidos" => $apellidos,
+            "Dni" => $Dni,
+            "Titulo" => html_entity_decode($titulo),
+            "Telefono" => $telefono,
+            "Curso" => $curso,
             
         );
  
