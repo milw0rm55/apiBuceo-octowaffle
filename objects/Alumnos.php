@@ -7,14 +7,14 @@ class Alumnos
     private $table_name = "alumnos";
 
     // object properties
-    public $id_alumno;
-    public $id_usuario;
-    public $nombre;
-    public $apellidos;
-    public $dni;
-    public $titulo;
-    public $telefono;
-    public $curso;
+    public $ID_Alumno;
+    public $ID_Usuario;
+    public $Nombre;
+    public $Apellido;
+    public $DNI;
+    public $Titulacion;
+    public $Telefono;
+    public $Curso;
 
     // constructor with $db as database connection
     public function __construct($db)

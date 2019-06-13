@@ -24,7 +24,7 @@ if($num>0){
     // alumnoss array
     $alumnos_arr=array();
     $alumnos_arr["records"]=array();
-    echo "AAAAAAAAAAaa ". $alumnos_arr["records"];
+    echo "AAAAAAAAAAaa ".var_dump($alumnos_arr);
     // retrieve our table contents
     // fetch() is faster than fetchAll()
     // http://stackoverflow.com/questions/2770630/pdofetchall-vs-pdofetch-in-a-loop
@@ -35,14 +35,14 @@ if($num>0){
         extract($row);
  
         $alumnos_item=array(
-            "ID_Alumno" => $id_alumno,
-            "ID_Usuario" => $id_usuario,
-            "Nombre" => $nombre,
-            "Apellidos" => $apellidos,
-            "Dni" => $dni,
-            "Titulo" => $titulo1,
-            "Telefono" => $telefono,
-            "Curso" => $curso,
+            "ID_Alumno" => $ID_Alumno,
+            "ID_Usuario" => $ID_Usuario,
+            "Nombre" => $Nombre,
+            "Apellidos" => $Apellidos,
+            "DNI" => $DNI,
+            "Titulacion" => $Titulacion,
+            "Telefono" => $Telefono,
+            "Curso" => $Curso,
             
         );
  
@@ -53,7 +53,7 @@ if($num>0){
     http_response_code(200);
  
     // show alumnoss data in json format
-    echo json_encode($alumnos_arr);
+    echo json_encode($alumnoss_arr);
 }
 
 else{
