@@ -3,9 +3,9 @@ class Database{
  
     // specify your own database credentials
     private $host = "remotemysql.com";
-    private $db_name = "oAZboYQ6d3";
-    private $username = "oAZboYQ6d3";
-    private $password = "mp46gA8U5O";
+    private $db_name = "wnyQW4w4LG";
+    private $username = "wnyQW4w4LG";
+    private $password = "pXrtL58yqk";
     public $conn;
  
     // get the database connection
