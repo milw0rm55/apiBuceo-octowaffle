@@ -4,7 +4,7 @@ class Alumnos
 
     // database connection and table nombre
     private $conn;
-    private $table_name = "Alumnos";
+    private $table_name = "alumnos";
 
     // object properties
     public $id_alumno;
