@@ -9,11 +9,11 @@ header('Content-Type: application/json');
 // include database and object files
 include_once '../config/database.php';
 include_once '../objects/Alumnos.php';
-
+echo"EEEEEEEEEEEEEEEEEEEe";
 // get database connection
 $database = new Database();
 $db = $database->getConnection();
-
+echo"EEEEEEEEEEEEEEEEEEEe";
 // prepare alumno object
 $alumno = new Alumnos($db);
 
