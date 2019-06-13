@@ -32,8 +32,6 @@ if($alumno->nombre!=null){
         "DNI" => $DNI,
         "Titulacion" => $Titulacion,
         "Telefono" => $Telefono,
-        "Curso" => $Curso,
-
     );
 
     // set response code - 200 OK
