@@ -28,7 +28,7 @@ if(
     !empty($data->Titulacion)&&
     !empty($data->Telefono)
 ){
-
+    echo "hola";
     // set Alumnos property values
     $alumno->Nombre = $data->Nombre;
     $alumno->Apellido = $data->Apellido;
