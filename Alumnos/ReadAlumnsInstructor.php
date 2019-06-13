@@ -18,12 +18,11 @@ $db = $database->getConnection();
 $alumno = new Alumnos($db);
 
 // set ID property of record to read
+echo"EEEEEEEEEEEEEEEEEEEe";
 $alumno->ID_Alumno = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
+echo"AAAAAAAAAAAAAAAa";
 // read the details of alumno to be edited
 $alumno->readOne();
-if($alumno->readOne()){
-    echo "esto es una mierda";
-}
 
 if($alumno->nombre!=null){
     // create array
