@@ -9,7 +9,7 @@ include_once '../objects/Alumnos.php';
 // instantiate database and alumnos object
 $database = new Database();
 $db = $database->getConnection();
-echo "AAAAAAAAAAaa";
+
 // initialize object
 $alumnos = new alumnos($db);
  
@@ -17,7 +17,7 @@ $alumnos = new alumnos($db);
 // query alumnoss
 $stmt = $alumnos->read();
 $num = $stmt->rowCount();
- 
+echo "AAAAAAAAAAaa ".$alumnos->read();
 // check if more than 0 record found
 if($num>0){
  
