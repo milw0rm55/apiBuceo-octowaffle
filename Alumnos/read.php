@@ -19,13 +19,12 @@ $stmt = $alumnos->read();
 $num = $stmt->rowCount();
 
 // check if more than 0 record found
-echo "Aquí llego";
+
 if($num>0){
  
     // alumnoss array
     $alumnos_arr=array();
     $alumnos_arr["records"]=array();
-    echo var_dump($alumnos_arr);
     // retrieve our table contents
     // fetch() is faster than fetchAll()
     // http://stackoverflow.com/questions/2770630/pdofetchall-vs-pdofetch-in-a-loop
@@ -33,9 +32,7 @@ if($num>0){
         // extract row
         // this will make $row['name'] to
         // just $name only
-        echo "hola";
         extract($row);
-        echo var_dump($row);
         $alumnos_item=array(
             "ID_Alumno" => $ID_Alumno,
             "ID_Usuario" => $ID_Usuario,
@@ -50,7 +47,7 @@ if($num>0){
  
         array_push($alumnos_arr["records"], $alumnos_item);
     }
- 
+    echo var_dump($alumnos_arr);
     // set response code - 200 OK
     http_response_code(200);
  
