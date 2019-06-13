@@ -22,21 +22,19 @@ $data = json_decode(file_get_contents("php://input"));
 
 // make sure data is not empty
 if(
-    !empty($data->nombre) &&
-    !empty($data->apellidos) &&
-    !empty($data->dni) &&
-    !empty($data->titulo)&&
-    !empty($data->telefono)&&
-    !empty($data->curso)
+    !empty($data->Nombre) &&
+    !empty($data->Apellido) &&
+    !empty($data->DNI) &&
+    !empty($data->Titulacion)&&
+    !empty($data->Telefono)
 ){
 
     // set Alumnos property values
-    $alumno->nombre = $data->nombre;
-    $alumno->apellidos = $data->apellidos;
-    $alumno->dni = $data->dni;
-    $alumno->titulo = $data->titulo;
-    $alumno->telefono = $data->telefono;
-    $alumno->curso = $data->curso;
+    $alumno->Nombre = $data->nombre;
+    $alumno->Apellido = $data->apellidos;
+    $alumno->DNI = $data->dni;
+    $alumno->Titulacion = $data->titulo;
+    $alumno->Telefono = $data->telefono;
 
     // create the Alumnos
     if($alumno->create()){

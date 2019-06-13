@@ -41,7 +41,6 @@ if($num>0){
             "DNI" => $DNI,
             "Titulacion" => $Titulacion,
             "Telefono" => $Telefono,
-            "Curso" => $Curso,
             
         );
  

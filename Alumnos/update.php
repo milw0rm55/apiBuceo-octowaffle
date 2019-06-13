@@ -21,15 +21,14 @@ $alumno = new Alumnos($db);
 $data = json_decode(file_get_contents("php://input"));
 
 // set ID property of Alumnos to be edited
-$alumno->id = $data->id;
+$alumno->ID_Alumno = $data->ID_Alumno;
 
 // set Alumnos property values
-$alumno->nombre = $data->name;
-$alumno->apellidos = $data->apellidos;
-$alumno->dni = $data->dni;
-$alumno->titulo = $data->titulo;
-$alumno->telefono = $data->telefono;
-$alumno->curso = $data->curso;
+$alumno->Nombre = $data->Nombre;
+$alumno->Apellido = $data->Apellido;
+$alumno->DNI = $data->DNI;
+$alumno->Titulacion = $data->Titulacion;
+$alumno->Telefono = $data->Telefono;
 // update the Alumnos
 if($alumno->update()){
 

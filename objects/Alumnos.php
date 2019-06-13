@@ -46,25 +46,25 @@ class Alumnos
         $query = "INSERT INTO
                 " . $this->table_name . "
             SET
-                nombre=:nombre, apellidos=:apellidos, dni=:dni, titulo=:titulo, telefono=:telefono, curso=:curso";
+                Nombre=:Nombre, Apellido=:Apellido, DNI=:DNI, Titulacion=:Titulacion, Telefono=:Telefono";
 
         // prepare query
         $stmt = $this->conn->prepare($query);
 
         // sanitize
-        $this->nombre = htmlspecialchars(strip_tags($this->nombre));
-        $this->apellidos = htmlspecialchars(strip_tags($this->apellidos));
-        $this->dni = htmlspecialchars(strip_tags($this->dni));
-        $this->titulo = htmlspecialchars(strip_tags($this->titulo));
-        $this->telefono = htmlspecialchars(strip_tags($this->telefono));
-        $this->curso = htmlspecialchars(strip_tags($this->curso));
+        $this->Nombre = htmlspecialchars(strip_tags($this->Nombre));
+        $this->Apellido = htmlspecialchars(strip_tags($this->Apellido));
+        $this->DNI = htmlspecialchars(strip_tags($this->DNI));
+        $this->Titulacion = htmlspecialchars(strip_tags($this->Titulacion));
+        $this->Telefono = htmlspecialchars(strip_tags($this->Telefono));
+
 
         // bind values
-        $stmt->bindParam(":nombre", $this->nombre);
-        $stmt->bindParam(":apellidos", $this->apellidos);
-        $stmt->bindParam(":dni", $this->dni);
-        $stmt->bindParam(":titulo", $this->titulo);
-        $stmt->bindParam(":telefono", $this->telefono);
+        $stmt->bindParam(":Nombre", $this->Nombre);
+        $stmt->bindParam(":Apellido", $this->Apellido);
+        $stmt->bindParam(":DNI", $this->DNI);
+        $stmt->bindParam(":Titulacion", $this->Titulacion);
+        $stmt->bindParam(":Telefono", $this->Telefono);
 
         // execute query
         if ($stmt->execute()) {
@@ -80,20 +80,13 @@ class Alumnos
     {
 
         // query to read single record
-        $query = "SELECT
-               *
-            FROM
-                " . $this->table_name . " p
-            WHERE
-                p.id = ?
-            LIMIT
-                0,1";
+        $query = "select * from alumnos where ID_Alumno = ?";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
 
         // bind id of Alumnos to be updated
-        $stmt->bindParam(1, $this->id);
+        $stmt->bindParam(1, $this->ID_Alumno);
 
         // execute query
         $stmt->execute();
@@ -102,12 +95,11 @@ class Alumnos
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
         // set values to object properties
-        $this->nombre = $row['nombre'];
-        $this->apellidos = $row['apellidos'];
-        $this->dni = $row['dni'];
-        $this->titulo = $row['tituñp'];
-        $this->telefono = $row['telefono'];
-        $this->curso = $row['curso'];
+        $this->Nombre = $row['Nombre'];
+        $this->Apellido = $row['Apellido'];
+        $this->DNI = $row['DNI'];
+        $this->Titulacion = $row['Titulacion'];
+        $this->Telefono = $row['Telefono'];
     }// used when filling up the update Alumnos form
 
     // update the Alumnos
@@ -118,35 +110,32 @@ class Alumnos
         $query = "UPDATE
                 " . $this->table_name . "
             SET
-                nombre = :nombre,
-                apellidos = :apellidos,
-                dni = :dni,
-                titulo = :titulo
-                telefono = :telefono
-                curso = :curso
+                Nombre = :Nombre,
+                Apellido = :Apellido,
+                DNI = :DNI,
+                Titulo = :Titulo
+                Telefono = :Telefono
             WHERE
-                id_alumno = :id_alumno";
+                ID_Alumno = :ID_Alumno";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
 
         // sanitize
-        $this->nombre = htmlspecialchars(strip_tags($this->nombre));
-        $this->apellidos = htmlspecialchars(strip_tags($this->apellidos));
-        $this->dni = htmlspecialchars(strip_tags($this->dni));
-        $this->titulo = htmlspecialchars(strip_tags($this->titulo));
-        $this->telefono = htmlspecialchars(strip_tags($this->telefono));
-        $this->curso = htmlspecialchars(strip_tags($this->curso));
-        $this->id_alumno = htmlspecialchars(strip_tags($this->id_alumno));
+        $this->Nombre = htmlspecialchars(strip_tags($this->Nombre));
+        $this->Apellido = htmlspecialchars(strip_tags($this->Apellido));
+        $this->DNI = htmlspecialchars(strip_tags($this->DNI));
+        $this->Titulacion = htmlspecialchars(strip_tags($this->Titulacion));
+        $this->Telefono = htmlspecialchars(strip_tags($this->Telefono));
+        $this->ID_Alumno = htmlspecialchars(strip_tags($this->ID_Alumno));
 
         // bind new values
-        $stmt->bindParam(':nombre', $this->nombre);
-        $stmt->bindParam(':apellidos', $this->apellidos);
-        $stmt->bindParam(':dni', $this->dni);
-        $stmt->bindParam(':titulo', $this->titulo);
-        $stmt->bindParam(':telefono', $this->telefono);
-        $stmt->bindParam(':curso', $this->curso);
-        $stmt->bindParam(':id_alumno', $this->id_alumno);
+        $stmt->bindParam(':Nombre', $this->Nombre);
+        $stmt->bindParam(':Apellidos', $this->Apellido);
+        $stmt->bindParam(':DNI', $this->DNI);
+        $stmt->bindParam(':Titulo', $this->Titulacion);
+        $stmt->bindParam(':Telefono', $this->Telefono);
+        $stmt->bindParam(':ID_Alumno', $this->ID_Alumno);
 
         // execute the query
         if ($stmt->execute()) {
@@ -161,16 +150,16 @@ class Alumnos
     {
 
         // delete query
-        $query = "DELETE FROM " . $this->table_name . " WHERE id_alumno = ?";
+        $query = "DELETE FROM " . $this->table_name . " WHERE ID_Alumno = ?";
 
         // prepare query
         $stmt = $this->conn->prepare($query);
 
         // sanitize
-        $this->id_alumno = htmlspecialchars(strip_tags($this->id_alumno));
+        $this->ID_Alumno = htmlspecialchars(strip_tags($this->ID_Alumno));
 
         // bind id of record to delete
-        $stmt->bindParam(1, $this->id_alumno);
+        $stmt->bindParam(1, $this->ID_Alumno);
 
         // execute query
         if ($stmt->execute()) {

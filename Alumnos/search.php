@@ -39,13 +39,12 @@ if($num>0){
         extract($row);
 
         $alumnos_item=array(
-            "id_alumno" => $id_alumno,
-            "nombre" => $nombre,
-            "apellidos" => $apellidos,
-            "dni" => $dni,
-            "titulo" => $titulo,
-            "telefono" => $telefono,
-            "curso" => $curso
+            "ID_Alumno" => $ID_Alumno,
+            "Nombre" => $Nombre,
+            "Apellido" => $Apellido,
+            "DNI" => $DNI,
+            "Titulo" => $Titulo,
+            "Telefono" => $Telefono
         );
 
         array_push($alumnos_arr["records"], $alumnos_item);

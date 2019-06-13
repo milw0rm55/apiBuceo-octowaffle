@@ -26,12 +26,14 @@ $alumno->readOne();
 if($alumno->nombre!=null){
     // create array
     $alumno_arr = array(
-        "id_alumno" =>  $alumno->id_aluumno,
-        "nombre" => $alumno->nombre,
-        "dni" => $alumno->dni,
-        "titulo" => $alumno->price,
-        "telefono" => $alumno->category_id,
-        "curso" => $alumno->category_name
+        "ID_Alumno" => $ID_Alumno,
+        "ID_Usuario" => $ID_Usuario,
+        "Nombre" => $Nombre,
+        "Apellidos" => $Apellidos,
+        "DNI" => $DNI,
+        "Titulacion" => $Titulacion,
+        "Telefono" => $Telefono,
+        "Curso" => $Curso,
 
     );
 
