@@ -26,7 +26,7 @@ class Alumnos
     {
 
         // select all query
-        $query = "SELECT * FROM `alumnos`";
+        $query = "select * from alumnos";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
