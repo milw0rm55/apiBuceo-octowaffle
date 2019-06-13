@@ -105,7 +105,14 @@ class Alumnos
     {
 
         // query to read single record
-        $query = "select * from alumnos where ID_Instructor = ?";
+        $query = "SELECT
+                *
+            FROM
+               alumnos
+            WHERE
+                ID_Alumno = ?
+            LIMIT
+                0,1";;
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
