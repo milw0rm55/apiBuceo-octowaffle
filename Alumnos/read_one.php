@@ -13,7 +13,7 @@ include_once '../objects/Alumnos.php';
 // get database connection
 $database = new Database();
 $db = $database->getConnection();
-
+echo"AAAAAAAAAAAAAAAa";
 // prepare alumno object
 $alumno = new Alumnos($db);
 
