@@ -30,11 +30,11 @@ if(
 ){
 
     // set Alumnos property values
-    $alumno->Nombre = $data->nombre;
-    $alumno->Apellido = $data->apellidos;
-    $alumno->DNI = $data->dni;
-    $alumno->Titulacion = $data->titulo;
-    $alumno->Telefono = $data->telefono;
+    $alumno->Nombre = $data->Nombre;
+    $alumno->Apellido = $data->Apellido;
+    $alumno->DNI = $data->DNI;
+    $alumno->Titulacion = $data->Titulo;
+    $alumno->Telefono = $data->Telefono;
 
     // create the Alumnos
     if($alumno->create()){
