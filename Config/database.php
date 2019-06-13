@@ -2,10 +2,10 @@
 class Database{
  
     // specify your own database credentials
-    private $host = "localhost";
-    private $db_name = "buceo_pedrena";
-    private $username = "root";
-    private $password = "";
+    private $host = "remotemysql.com";
+    private $db_name = "oAZboYQ6d3";
+    private $username = "oAZboYQ6d3";
+    private $password = "mp46gA8U5O";
     public $conn;
  
     // get the database connection
