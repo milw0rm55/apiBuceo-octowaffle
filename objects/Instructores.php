@@ -6,12 +6,12 @@ class Instructores{
     private $table_name = "Instructores";
  
     // object properties
-    public $id_instructor;
-    public $nombre;
-    public $apellidos;
-    public $dni;
-    public $titulo;
-    public $telefono;
+    public $ID_Instructor;
+    public $Nombre;
+    public $Apellido;
+    public $DNI;
+    public $Titulacion;
+    public $Telefono;
     public $disponibilidad;
  
     // constructor with $db as database connection
@@ -22,10 +22,7 @@ class Instructores{
     function read(){
 
         // select all query
-        $query = "SELECT
-               *
-            FROM
-                " . $this->table_name ;
+        $query = "select * from instructores" ;
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);

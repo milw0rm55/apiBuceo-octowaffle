@@ -36,13 +36,13 @@ if($num>0){
         extract($row);
 
         $instructores_item=array(
-            "id_instructor" => $id_instructor,
-            "nombre" => $nombre,
-            "apellidos" => $apellidos,
-            "dni" => $dni,
-            "titulo" => ($titulo),
-            "telefono" => $telefono,
-            "disponibilidad" => $disponibilidad,
+            "ID_Instructor" => $ID_Instructor,
+            "Nombre" => $Nombre,
+            "Apellidos" => $Apellidos,
+            "DNI" => $DNI,
+            "Titulacion" => $Titulacion,
+            "telefono" => $Telefono,
+            "disponibilidad" => $Disponibilidad,
 
         );
 
@@ -53,7 +53,7 @@ if($num>0){
     http_response_code(200);
 
     // show instructoress data in json format
-    echo json_encode($instructoress_arr);
+    echo json_encode($instructores_arr);
 }
 
 else{
