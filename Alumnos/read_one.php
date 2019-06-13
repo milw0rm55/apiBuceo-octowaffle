@@ -19,7 +19,7 @@ $alumno = new Alumnos($db);
 
 // set ID property of record to read
 $alumno->id = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
-
+echo "AAAAAAAAAAAAa";
 // read the details of alumno to be edited
 $alumno->readOne();
 
