@@ -19,6 +19,7 @@ $stmt = $alumnos->read();
 $num = $stmt->rowCount();
 
 // check if more than 0 record found
+echo "Aquí llego";
 if($num>0){
  
     // alumnoss array
@@ -32,8 +33,9 @@ if($num>0){
         // extract row
         // this will make $row['name'] to
         // just $name only
+        echo "hola";
         extract($row);
- 
+        echo $row;
         $alumnos_item=array(
             "ID_Alumno" => $ID_Alumno,
             "ID_Usuario" => $ID_Usuario,
