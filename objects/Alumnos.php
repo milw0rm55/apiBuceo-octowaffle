@@ -29,11 +29,11 @@ class Alumnos
         $query = "SELECT
                *
             FROM
-                " . $this->table_name;
+                " . $this->table_name . " p";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
-        echo $stmt;
+
         // execute query
         $stmt->execute();
 
@@ -85,9 +85,9 @@ class Alumnos
         $query = "SELECT
                *
             FROM
-                " . $this->table_name . " 
+                " . $this->table_name . " p
             WHERE
-                id = ?
+                p.id = ?
             LIMIT
                 0,1";
 
@@ -107,7 +107,7 @@ class Alumnos
         $this->nombre = $row['nombre'];
         $this->apellidos = $row['apellidos'];
         $this->dni = $row['dni'];
-        $this->titulo = $row['titulo'];
+        $this->titulo = $row['tituñp'];
         $this->telefono = $row['telefono'];
         $this->curso = $row['curso'];
     }// used when filling up the update Alumnos form
