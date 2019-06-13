@@ -78,7 +78,7 @@ class Alumnos
     // used when filling up the update Alumnos form
     function readOne()
     {
-
+    echo "AAAAAAAAAAAAA x5";
         // query to read single record
         $query = "SELECT
                 *
