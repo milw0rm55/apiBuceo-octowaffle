@@ -26,10 +26,7 @@ class Alumnos
     {
 
         // select all query
-        $query = "SELECT
-               *
-            FROM
-                " . $this->table_name . " p";
+        $query = "SELECT * FROM `alumnos`";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
