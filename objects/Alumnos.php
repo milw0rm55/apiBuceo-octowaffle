@@ -85,9 +85,7 @@ class Alumnos
             FROM
                alumnos
             WHERE
-                ID_Alumno = 1 
-                LIMIT
-                    0,1";
+                ID_Alumno = 1 ";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
