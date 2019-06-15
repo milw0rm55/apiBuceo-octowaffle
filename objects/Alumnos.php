@@ -92,7 +92,12 @@ class Alumnos
 
         // bind id of Alumnos to be updated
         $stmt->bindParam(1, $this->ID_Alumno);
-        echo $this->ID_Alumno;
+        if($stmt->bindParam(1, $this->ID_Alumno)){
+            echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA nani";
+        }
+        else{
+            echo "No va";
+        }
         // execute query
         $stmt->execute();
         // get retrieved row
