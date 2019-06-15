@@ -34,7 +34,6 @@ class Alumnos
 
         // execute query
         $stmt->execute();
-        echo var_dump($stmt);
         return $stmt;
     }
 
@@ -86,8 +85,6 @@ class Alumnos
 
         // execute query
         $stmt->execute();
-        echo "enserio es un puto bool";
-        echo var_dump( $stmt);
         return $stmt;
     }// used when filling up the update Alumnos form
     function readAlIns()
