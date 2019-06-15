@@ -95,10 +95,11 @@ class Alumnos
 
         // execute query
         $stmt->execute();
-        echo var_dump($stmt->execute());
+
         // get retrieved row
 
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        echo var_dump($row);
         // set values to object properties
         $this->Nombre = $row['Nombre'];
         $this->Apellido = $row['Apellido'];
