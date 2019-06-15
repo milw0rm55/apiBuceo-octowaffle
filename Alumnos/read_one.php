@@ -22,7 +22,7 @@ $alumno->ID_Alumno = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
 
 // read the details of alumno to be edited
 $alumno->readOne();
-echo "AAAAAAAAAA".var_dump($alumno->Nombre);
+
 if($alumno->Nombre!=null){
     // create array
     $alumno_arr = array(
