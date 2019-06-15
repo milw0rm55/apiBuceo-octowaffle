@@ -15,10 +15,10 @@ $database = new Database();
 $db = $database->getConnection();
 
 // prepare alumno object
-$instructor = new Alumnos($db);
+$instructor = new Instructores($db);
 
 // set ID property of record to read
-$instructor->ID_Alumno = isset($_GET['ID_Instructor']) ? $_GET['ID_Instructor'] : die();
+$instructor->ID_Instructor = isset($_GET['ID_Instructor']) ? $_GET['ID_Instructor'] : die();
 
 // read the details of alumno to be edited
 $instructor->readOne();
