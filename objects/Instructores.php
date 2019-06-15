@@ -36,7 +36,6 @@ class Instructores{
 }
 function readOne()
 {
-
     // query to read single record
     $query = "SELECT
                 *
@@ -44,7 +43,7 @@ function readOne()
                instructores
             WHERE
                 ID_Instructor = ? ";
-
+    echo "AAAAAAAAAAAAaa";
     // prepare query statement
     $stmt = $this->conn->prepare($query);
 
