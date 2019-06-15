@@ -88,9 +88,9 @@ class Alumnos
                 ID_Alumno = 1 ";
 
         // prepare query statement
-        echo var_dump($query);
-        $stmt = $this->conn->prepare($query);
 
+        $stmt = $this->conn->prepare($query);
+        echo var_dump($stmt);
         // bind id of Alumnos to be updated
         $stmt->bindParam(1, $this->ID_Alumno);
         // execute query
