@@ -99,7 +99,7 @@ class Alumnos
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         // set values to object properties
         $this->Nombre = $row['Nombre'];
-        $this->Apellido = $row['Apellido'];
+        $this->Apellido = $row['Apellidos'];
         $this->DNI = $row['DNI'];
         $this->Titulacion = $row['Titulacion'];
         $this->Telefono = $row['Telefono'];

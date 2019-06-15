@@ -7,12 +7,13 @@ class Instructores{
  
     // object properties
     public $ID_Instructor;
+    public $ID_Usuario;
     public $Nombre;
     public $Apellido;
     public $DNI;
     public $Titulacion;
     public $Telefono;
-    public $disponibilidad;
+    public $Disponibilidad;
  
     // constructor with $db as database connection
     public function __construct($db){
@@ -32,4 +33,33 @@ class Instructores{
 
         return $stmt;
     }
+}
+function readOne()
+{
+
+    // query to read single record
+    $query = "SELECT
+                *
+            FROM
+               instructores
+            WHERE
+                ID_Instructor = ? ";
+
+    // prepare query statement
+    $stmt = $this->conn->prepare($query);
+
+    // bind id of Alumnos to be updated
+    $stmt->bindParam(1, $this->ID_Alumno);
+    // execute query
+    $stmt->execute();
+    // get retrieved row
+
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    // set values to object properties
+    $this->Nombre = $row['Nombre'];
+    $this->Apellido = $row['Apellidos'];
+    $this->DNI = $row['DNI'];
+    $this->Titulacion = $row['Titulacion'];
+    $this->Telefono = $row['Telefono'];
+    $this->Disponibilidad = $row['Disponibilidad'];
 }

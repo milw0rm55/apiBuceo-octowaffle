@@ -8,30 +8,32 @@ header('Content-Type: application/json');
 
 // include database and object files
 include_once '../config/database.php';
-include_once '../objects/Alumnos.php';
+include_once '../objects/Instructores.php';
 
 // get database connection
 $database = new Database();
 $db = $database->getConnection();
 
 // prepare alumno object
-$alumno = new Alumnos($db);
+$instructor = new Alumnos($db);
 
 // set ID property of record to read
-$alumno->id = isset($_GET['id_alumno']) ? $_GET['id_alumno'] : die();
+$instructor->ID_Alumno = isset($_GET['ID_Instructor']) ? $_GET['ID_Instructor'] : die();
 
 // read the details of alumno to be edited
-$alumno->readOne();
+$instructor->readOne();
 
-if($alumno->nombre!=null){
+if($instructor->Nombre!=null){
     // create array
-    $alumno_arr = array(
-        "id_alumno" =>  $alumno->id_aluumno,
-        "nombre" => $alumno->nombre,
-        "dni" => $alumno->dni,
-        "titulo" => $alumno->price,
-        "telefono" => $alumno->category_id,
-        "curso" => $alumno->category_name
+    $instructor_arr = array(
+        "ID_Instructor" => $instructor->ID_Instructor,
+        "ID_Usuario" => $instructor->ID_Usuario,
+        "Nombre" => $instructor->Nombre,
+        "Apellidos" => $instructor->Apellido,
+        "DNI" => $instructor->DNI,
+        "Titulacion" => $instructor->Titulacion,
+        "Telefono" => $instructor->Telefono,
+        "Disponibilidad" => $instructor->Disponibilidad,
 
     );
 
@@ -39,7 +41,7 @@ if($alumno->nombre!=null){
     http_response_code(200);
 
     // make it json format
-    echo json_encode($alumno_arr);
+    echo json_encode($instructor_arr);
 }
 
 else{
