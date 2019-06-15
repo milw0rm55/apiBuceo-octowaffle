@@ -97,7 +97,7 @@ class Alumnos
         $stmt->execute();
         // get retrieved row
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
-        echo "AAAAAAAAAAAAAAAAAAAAAAAa x16". $row['Nombre'];
+        echo "AAAAAAAAAAAAAAAAAAAAAAAa x16". $row['ID_Alumno'];
         // set values to object properties
         $this->Nombre = $row['Nombre'];
         $this->Apellido = $row['Apellido'];
