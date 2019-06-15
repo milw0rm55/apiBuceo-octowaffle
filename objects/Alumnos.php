@@ -95,15 +95,9 @@ class Alumnos
 
         // execute query
         $stmt->execute();
-        if ($stmt->execute()){
-            echo "AAAAAAAAAAAAAAAAAAAAAAAa x12";
-        }
-        else{
-            echo "AAAAAAAAAAAAAAAAAAAAAAAa x13";
-        }
-        echo "AAAAAAAAAAAAAAAAAAAAAAAa x11";
         // get retrieved row
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        echo "AAAAAAAAAAAAAAAAAAAAAAAa x14";
         // set values to object properties
         $this->Nombre = $row['Nombre'];
         $this->Apellido = $row['Apellido'];
