@@ -16,7 +16,7 @@ $db = $database->getConnection();
 
 // prepare alumno object
 $instructor = new Instructores($db);
-
+echo "AAAAAAAAAAAAAAAAAaa";
 // set ID property of record to read
 $instructor->ID_Instructor = isset($_GET['ID_Instructor']) ? $_GET['ID_Instructor'] : die();
 
