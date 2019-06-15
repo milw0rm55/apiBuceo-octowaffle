@@ -95,6 +95,7 @@ class Alumnos
         // execute query
         $stmt->execute();
         // get retrieved row
+
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         // set values to object properties
         $this->Nombre = $row['Nombre'];
@@ -102,6 +103,9 @@ class Alumnos
         $this->DNI = $row['DNI'];
         $this->Titulacion = $row['Titulacion'];
         $this->Telefono = $row['Telefono'];
+        echo $row['ID_Alumno'];
+        echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        echo $row['Nombre'];
     }// used when filling up the update Alumnos form
     function readAlIns()
     {
