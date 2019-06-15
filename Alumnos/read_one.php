@@ -33,7 +33,6 @@ if($alumno->Nombre!=null){
         "DNI" => $alumno->DNI,
         "Titulacion" => $alumno->Titulacion,
         "Telefono" => $alumno->Telefono,
-        "Curso" => $alumno->Curso,
 
     );
 
