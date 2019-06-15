@@ -19,9 +19,10 @@ $alumno = new Alumnos($db);
 
 // set ID property of record to read
 $alumno->ID_Alumno = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
-echo "AAAAAAAAAA".$_GET['ID_Alumno'];
+
 // read the details of alumno to be edited
 $alumno->readOne();
+echo "AAAAAAAAAA".var_dump($alumno->Nombre);
 if($alumno->Nombre!=null){
     // create array
     $alumno_arr = array(
