@@ -21,6 +21,7 @@ $alumno = new Alumnos($db);
 $alumno->ID_Alumno = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
 $alumno->readOne();
 $num = $alumno->rowCount();
+echo $num;
 // read the details of alumno to be edited
 
 if($num>0){

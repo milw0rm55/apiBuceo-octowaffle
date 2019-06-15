@@ -108,7 +108,7 @@ class Alumnos
 
         // execute query
         $stmt->execute();
-        echo "AAAAAAAAA".$query;
+
 
         // get retrieved row
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
