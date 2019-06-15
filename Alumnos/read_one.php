@@ -21,7 +21,9 @@ $alumno = new Alumnos($db);
 $alumno->ID_Alumno = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
 $alumno->readOne();
 echo $alumno->ID_Alumno;
+echo "Aqui deberia ir el nombre : ";
 echo $alumno ->Nombre;
+echo "El nombre deberia ir antes de esto";
 // read the details of alumno to be edited
 if($alumno->Nombre!=null){
     // create array
