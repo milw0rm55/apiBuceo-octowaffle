@@ -34,7 +34,7 @@ class Alumnos
 
         // execute query
         $stmt->execute();
-
+        echo var_dump($stmt);
         return $stmt;
     }
 
