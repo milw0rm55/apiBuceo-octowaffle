@@ -21,8 +21,7 @@ $alumno = new Alumnos($db);
 $alumno->ID_Alumno = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
 echo $alumno->ID_Alumno;
 // read the details of alumno to be edited
-$alumno->readOne();
-if($alumno->nombre!=null){
+if($alumno->Nombre!=null){
     // create array
     $alumno_arr = array(
         "ID_Alumno" => $ID_Alumno,
