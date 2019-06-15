@@ -78,24 +78,20 @@ class Alumnos
     // used when filling up the update Alumnos form
     function readOne()
     {
-
         // query to read single record
         $query = "SELECT
                 *
             FROM
-               alumnos
+               instructores
             WHERE
                 ID_Alumno = ? ";
-
         // prepare query statement
         $stmt = $this->conn->prepare($query);
-
         // bind id of Alumnos to be updated
         $stmt->bindParam(1, $this->ID_Alumno);
         // execute query
         $stmt->execute();
         // get retrieved row
-
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         // set values to object properties
         $this->Nombre = $row['Nombre'];

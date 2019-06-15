@@ -43,10 +43,8 @@ function readOne()
                instructores
             WHERE
                 ID_Instructor = ? ";
-    echo "AAAAAAAAAAAAaa";
     // prepare query statement
     $stmt = $this->conn->prepare($query);
-
     // bind id of Alumnos to be updated
     $stmt->bindParam(1, $this->ID_Alumno);
     // execute query
