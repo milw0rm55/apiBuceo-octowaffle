@@ -85,7 +85,7 @@ class Alumnos
             FROM
                alumnos
             WHERE
-                ID_Alumno = ? 
+                ID_Alumno = 1 
                 LIMIT
                     0,1";
 
