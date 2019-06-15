@@ -20,8 +20,7 @@ $alumno = new Alumnos($db);
 // set ID property of record to read
 $alumno->ID_Alumno = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
 $alumno->readOne();
-$num = $alumno->rowCount();
-echo var_dump($num);
+echo var_dump($alumno);
 // read the details of alumno to be edited
 if($alumno->Nombre!=null){
     // create array
