@@ -95,7 +95,7 @@ class Alumnos
 
         // execute query
         $stmt->execute();
-        echo "AAAAAAAAAAAAAAa X10";
+        echo "AAAAAAAAAAAAAAa X10".$stmt."AAAAAAAAAAAAAAAAAAAAAAAa x11";
         // get retrieved row
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         // set values to object properties
