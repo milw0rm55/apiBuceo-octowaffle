@@ -83,11 +83,10 @@ class Alumnos
         // prepare query statement
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(1, $this->ID_Alumno);
-        echo "AAAAAAAa";
-        echo var_dump($stmt->bindParam(1, $this->ID_Alumno));
+
         // execute query
         $stmt->execute();
-
+        echo var_dump( $stmt->execute());
         return $stmt;
     }// used when filling up the update Alumnos form
     function readAlIns()
