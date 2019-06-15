@@ -82,7 +82,7 @@ class Alumnos
         $query = "SELECT
                 *
             FROM
-               instructores
+               alumnos
             WHERE
                 ID_Alumno = ? ";
         // prepare query statement
