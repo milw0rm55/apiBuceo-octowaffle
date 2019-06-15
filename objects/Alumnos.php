@@ -85,13 +85,15 @@ class Alumnos
             FROM
                alumnos
             WHERE
-                ID_Alumno = ?";
+                ID_Alumno = ? 
+                LIMIT
+                    0,1";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
 
         // bind id of Alumnos to be updated
-        $stmt->bindParam("?", $this->ID_Alumno);
+        $stmt->bindParam(1, $this->ID_Alumno);
         // execute query
         $stmt->execute();
         // get retrieved row
