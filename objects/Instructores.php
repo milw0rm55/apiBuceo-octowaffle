@@ -46,11 +46,10 @@ function readOne()
     // prepare query statement
     $stmt = $this->conn->prepare($query);
     // bind id of Alumnos to be updated
-    $stmt->bindParam(1, $this->ID_Alumno);
+    $stmt->bindParam(1, $this->ID_Instructor);
     // execute query
     $stmt->execute();
     // get retrieved row
-
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
     // set values to object properties
     $this->Nombre = $row['Nombre'];
@@ -58,5 +57,4 @@ function readOne()
     $this->DNI = $row['DNI'];
     $this->Titulacion = $row['Titulacion'];
     $this->Telefono = $row['Telefono'];
-    $this->Disponibilidad = $row['Disponibilidad'];
 }
