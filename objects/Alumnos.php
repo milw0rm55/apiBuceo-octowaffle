@@ -90,9 +90,9 @@ class Alumnos
         // prepare query statement
 
         $stmt = $this->conn->prepare($query);
-        echo var_dump($stmt);
         // bind id of Alumnos to be updated
         $stmt->bindParam(1, $this->ID_Alumno);
+        echo var_dump($stmt);
         // execute query
         $stmt->execute();
         // get retrieved row
