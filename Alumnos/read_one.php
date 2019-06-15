@@ -26,14 +26,14 @@ echo "AAAAAAAAAA".var_dump($alumno->Nombre);
 if($alumno->Nombre!=null){
     // create array
     $alumno_arr = array(
-        "ID_Alumno" => $ID_Alumno,
-        "ID_Usuario" => $ID_Usuario,
-        "Nombre" => $Nombre,
-        "Apellidos" => $Apellidos,
-        "DNI" => $DNI,
-        "Titulacion" => $Titulacion,
-        "Telefono" => $Telefono,
-        "Curso" => $Curso,
+        "ID_Alumno" => $alumno->ID_Alumno,
+        "ID_Usuario" => $alumno->ID_Usuario,
+        "Nombre" => $alumno->Nombre,
+        "Apellidos" => $alumno->Apellido,
+        "DNI" => $alumno->DNI,
+        "Titulacion" => $alumno->Titulacion,
+        "Telefono" => $alumno->Telefono,
+        "Curso" => $alumno->Curso,
 
     );
 
