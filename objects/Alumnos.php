@@ -181,7 +181,7 @@ class Alumnos
     {
 
         // delete query
-        $query = "DELETE FROM " . $this->table_name . " WHERE ID_Alumno = ?";
+        $query = "DELETE FROM alumnos WHERE ID_Alumno = ?";
 
         // prepare query
         $stmt = $this->conn->prepare($query);
