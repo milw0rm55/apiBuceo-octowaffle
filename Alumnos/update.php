@@ -26,7 +26,7 @@ $alumno->ID_Alumno = $data->ID_Alumno;
 // set Alumnos property values
 $alumno->ID_Usuario = $data->ID_Usuario;
 $alumno->Nombre = $data->Nombre;
-$alumno->Apellidos = $data->Apellido;
+$alumno->Apellido = $data->Apellidos;
 $alumno->DNI = $data->DNI;
 $alumno->Titulacion = $data->Titulacion;
 $alumno->Telefono = $data->Telefono;
