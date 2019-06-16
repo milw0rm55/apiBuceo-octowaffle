@@ -198,7 +198,7 @@ class Alumnos
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
-
+        echo $this->ID_Alumno;
         $stmt->bindParam(1, $this->ID_Alumno);
 
         // execute query
