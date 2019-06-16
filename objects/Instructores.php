@@ -66,8 +66,8 @@ function delete()
     // prepare query
     $stmt = $this->conn->prepare($query);
     // sanitize
-    $this->ID_Alumno=htmlspecialchars(strip_tags($this->ID_Alumno));
-    $stmt->bindParam(1, $this->ID_Alumno);
+    $this->ID_Instructor=htmlspecialchars(strip_tags($this->ID_Instructor));
+    $stmt->bindParam(1, $this->ID_Instructor);
     // execute query
     if ($stmt->execute()) {
         return true;
