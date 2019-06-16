@@ -15,7 +15,7 @@ $alumnos = new alumnos($db);
  
 // read alumnoss will be here
 // query alumnoss
-$stmt = $alumnos->instAl();
+$stmt = $alumnos->read();
 $num = $stmt->rowCount();
 
 // check if more than 0 record found
