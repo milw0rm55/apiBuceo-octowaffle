@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef36909b-d7d7-405b-bdb5-fb3e80842a0d" name="Default Changelist" comment="" />
+    <list default="true" id="ef36909b-d7d7-405b-bdb5-fb3e80842a0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects/Instructores.php" beforeDir="false" afterPath="$PROJECT_DIR$/objects/Instructores.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/objects/Instructores.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="127" column="25" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alumnos/read_one.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="301">
+              <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -54,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Instructores/read_one_ID_Usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
+            <state relative-caret-position="476">
               <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
             </state>
           </provider>
@@ -123,8 +117,8 @@
         <option value="$PROJECT_DIR$/Alumnos/read_one.php" />
         <option value="$PROJECT_DIR$/Alumnos/read_one_ID_Usuario.php" />
         <option value="$PROJECT_DIR$/objects/Alumnos.php" />
-        <option value="$PROJECT_DIR$/objects/Instructores.php" />
         <option value="$PROJECT_DIR$/Instructores/read_one_ID_Usuario.php" />
+        <option value="$PROJECT_DIR$/objects/Instructores.php" />
       </list>
     </option>
   </component>
@@ -225,12 +219,12 @@
       <workItem from="1560595253895" duration="15632000" />
       <workItem from="1560633803316" duration="5415000" />
       <workItem from="1560662479514" duration="596000" />
-      <workItem from="1560663536109" duration="25299000" />
+      <workItem from="1560663536109" duration="25935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91849000" />
+    <option name="totallyTimeSpent" value="92485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -439,24 +433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Alumnos/read_one.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Alumnos/read_one_ID_Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Instructores/read_one_ID_Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -467,10 +447,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Alumnos/read_one.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instructores/read_one_ID_Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/objects/Instructores.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="127" column="25" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
+        <state relative-caret-position="301">
+          <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
         </state>
       </provider>
     </entry>
