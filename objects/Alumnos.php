@@ -194,12 +194,9 @@ class Alumnos
 
         // select all query
         $query = "SELECT * FROM alumnos WHERE ID_Instructor = ?";
-        echo var_dump($query);
-
         // prepare query statement
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(1, $this->ID_Alumno);
-
         // execute query
         $stmt->execute();
         return $stmt;
