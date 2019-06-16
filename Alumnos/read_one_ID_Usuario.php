@@ -18,7 +18,7 @@ $db = $database->getConnection();
 $alumno = new Alumnos($db);
 
 // set ID property of record to read
-$alumno->ID_Alumno = isset($_GET['ID_Usuario']) ? $_GET['ID_Usuario'] : die();
+$alumno->ID_Usuario = isset($_GET['ID_Usuario']) ? $_GET['ID_Usuario'] : die();
 
 // read the details of alumno to be edited
 $alumno->read_one_ID_Usuario();
