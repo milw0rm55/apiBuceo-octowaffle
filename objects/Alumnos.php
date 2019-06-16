@@ -135,13 +135,13 @@ class Alumnos
         $stmt->bindParam(':ID_Alumno', $this->ID_Alumno);
 
         // execute the query
-        echo var_dump($stmt);
+        echo var_dump($stmt->execute());
         if ($stmt->execute()) {
-            echo "AAAAAAAAAAAAAAAAAAAA PERRAS";
+            echo "AAAAAAAAAAAAAAAAAAAA PERRAS2";
             return true;
         }
         else{
-            echo "EEEEEEEEEEEEEEEEEEEEEEEEEEEE PERROS";
+            echo "EEEEEEEEEEEEEEEEEEEEEEEEEEEE PERROS1";
         }
 
         return false;
