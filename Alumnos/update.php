@@ -24,6 +24,7 @@ $data = json_decode(file_get_contents("php://input"));
 $alumno->ID_Alumno = $data->ID_Alumno;
 
 // set Alumnos property values
+$alumno->ID_Usuario = $data->ID_Usuario;
 $alumno->Nombre = $data->Nombre;
 $alumno->Apellido = $data->Apellido;
 $alumno->DNI = $data->DNI;
