@@ -126,8 +126,6 @@ class Alumnos
         $this->Telefono = htmlspecialchars(strip_tags($this->Telefono));
         $this->ID_Alumno = htmlspecialchars(strip_tags($this->ID_Alumno));
 
-        echo $this->Apellido;
-        echo $this->ID_Usuario;
         // bind new values
         $stmt->bindParam(':Nombre', $this->Nombre);
         $stmt->bindParam(':Apellido', $this->Apellido);
@@ -137,6 +135,7 @@ class Alumnos
         $stmt->bindParam(':ID_Alumno', $this->ID_Alumno);
 
         // execute the query
+        echo var_dump($stmt);
         if ($stmt->execute()) {
             return true;
         }
