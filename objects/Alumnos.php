@@ -99,39 +99,6 @@ class Alumnos
         $this->DNI = $row['DNI'];
         $this->Titulacion = $row['Titulacion'];
         $this->Telefono = $row['Telefono'];
-    }// used when filling up the update Alumnos form
-    function readAlIns()
-    {
-
-        // query to read single record
-        $query = "SELECT
-                *
-            FROM
-               alumnos
-            WHERE
-                ID_Alumno = 1
-            LIMIT
-                0,1";
-
-        // prepare query statement
-        $stmt = $this->conn->prepare($query);
-
-        // bind id of Alumnos to be updated
-        $stmt->bindParam('?', $this->ID_Alumno);
-
-        // execute query
-        $stmt->execute();
-        echo "AAAAAAAAA".$query;
-
-        // get retrieved row
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        // set values to object properties
-        $this->Nombre = $row['Nombre'];
-        $this->Apellido = $row['Apellido'];
-        $this->DNI = $row['DNI'];
-        $this->Titulacion = $row['Titulacion'];
-        $this->Telefono = $row['Telefono'];
     }
     // update the Alumnos
     function update()
@@ -158,7 +125,7 @@ class Alumnos
         $this->Titulacion = htmlspecialchars(strip_tags($this->Titulacion));
         $this->Telefono = htmlspecialchars(strip_tags($this->Telefono));
         $this->ID_Alumno = htmlspecialchars(strip_tags($this->ID_Alumno));
-
+        echo $this ->Nombre;
         // bind new values
         $stmt->bindParam(':Nombre', $this->Nombre);
         $stmt->bindParam(':Apellidos', $this->Apellido);
