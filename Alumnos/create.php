@@ -31,7 +31,7 @@ if(
     echo "hola";
     // set Alumnos property values
     $alumno->Nombre = $data->Nombre;
-    $alumno->Apellido = $data->Apellido;
+    $alumno->Apellidos = $data->Apellido;
     $alumno->DNI = $data->DNI;
     $alumno->Titulacion = $data->Titulo;
     $alumno->Telefono = $data->Telefono;

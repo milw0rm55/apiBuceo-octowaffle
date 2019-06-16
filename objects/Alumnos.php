@@ -10,7 +10,7 @@ class Alumnos
     public $ID_Alumno;
     public $ID_Usuario;
     public $Nombre;
-    public $Apellido;
+    public $Apellidos;
     public $DNI;
     public $Titulacion;
     public $Telefono;
@@ -53,7 +53,7 @@ class Alumnos
 
         // sanitize
         $this->Nombre = htmlspecialchars(strip_tags($this->Nombre));
-        $this->Apellido = htmlspecialchars(strip_tags($this->Apellido));
+        $this->Apellidos = htmlspecialchars(strip_tags($this->Apellidos));
         $this->DNI = htmlspecialchars(strip_tags($this->DNI));
         $this->Titulacion = htmlspecialchars(strip_tags($this->Titulacion));
         $this->Telefono = htmlspecialchars(strip_tags($this->Telefono));
@@ -61,7 +61,7 @@ class Alumnos
 
         // bind values
         $stmt->bindParam(":Nombre", $this->Nombre);
-        $stmt->bindParam(":Apellido", $this->Apellido);
+        $stmt->bindParam(":Apellido", $this->Apellidos);
         $stmt->bindParam(":DNI", $this->DNI);
         $stmt->bindParam(":Titulacion", $this->Titulacion);
         $stmt->bindParam(":Telefono", $this->Telefono);
@@ -95,7 +95,7 @@ class Alumnos
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         // set values to object properties
         $this->Nombre = $row['Nombre'];
-        $this->Apellido = $row['Apellidos'];
+        $this->Apellidos = $row['Apellidos'];
         $this->DNI = $row['DNI'];
         $this->Titulacion = $row['Titulacion'];
         $this->Telefono = $row['Telefono'];
@@ -108,7 +108,7 @@ class Alumnos
                 alumnos
             SET
                 Nombre = :Nombre,
-                Apellidos = :Apellido,
+                Apellidos = :Apellidos,
                 DNI = :DNI,
                 Titulo = :Titulo
                 Telefono = :Telefono
@@ -120,17 +120,22 @@ class Alumnos
 
         // sanitize
         $this->Nombre = htmlspecialchars(strip_tags($this->Nombre));
-        $this->Apellido = htmlspecialchars(strip_tags($this->Apellido));
+        $this->Apellidos = htmlspecialchars(strip_tags($this->Apellidos));
         $this->DNI = htmlspecialchars(strip_tags($this->DNI));
         $this->Titulacion = htmlspecialchars(strip_tags($this->Titulacion));
         $this->Telefono = htmlspecialchars(strip_tags($this->Telefono));
         $this->ID_Alumno = htmlspecialchars(strip_tags($this->ID_Alumno));
 
-        echo $this->Apellido;
+        echo $this->Apellidos;
         echo $this->ID_Usuario;
+        echo  $this->ID_Alumno;
+        echo $this->Nombre;
+        echo $this->DNI;
+        echo  $this->Titulacion;
+
         // bind new values
         $stmt->bindParam(':Nombre', $this->Nombre);
-        $stmt->bindParam(':Apellido', $this->Apellido);
+        $stmt->bindParam(':Apellidos', $this->Apellidos);
         $stmt->bindParam(':DNI', $this->DNI);
         $stmt->bindParam(':Titulo', $this->Titulacion);
         $stmt->bindParam(':Telefono', $this->Telefono);
