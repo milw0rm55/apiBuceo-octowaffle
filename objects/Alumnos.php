@@ -108,7 +108,7 @@ class Alumnos
                 alumnos
             SET
                 Nombre = :Nombre,
-                Apellido = :Apellido,
+                Apellidos = :Apellido,
                 DNI = :DNI,
                 Titulo = :Titulo
                 Telefono = :Telefono
