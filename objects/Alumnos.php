@@ -113,6 +113,7 @@ class Alumnos
         $stmt = $this->conn->prepare($query);
         // bind id of Alumnos to be updated
         $stmt->bindParam(1, $this->ID_Usuario);
+        echo $this->ID_Usuario;
         // execute query
         $stmt->execute();
         // get retrieved row
