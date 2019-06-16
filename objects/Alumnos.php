@@ -113,9 +113,9 @@ class Alumnos
         $stmt = $this->conn->prepare($query);
         // bind id of Alumnos to be updated
         $stmt->bindParam(1, $this->ID_Usuario);
-        echo $this->ID_Usuario;
         // execute query
         $stmt->execute();
+        echo var_dump( $stmt->execute());
         // get retrieved row
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         // set values to object properties
