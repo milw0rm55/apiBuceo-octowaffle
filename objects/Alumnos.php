@@ -125,10 +125,9 @@ class Alumnos
         $this->Titulacion = htmlspecialchars(strip_tags($this->Titulacion));
         $this->Telefono = htmlspecialchars(strip_tags($this->Telefono));
         $this->ID_Alumno = htmlspecialchars(strip_tags($this->ID_Alumno));
-        echo $this ->Nombre;
         // bind new values
         $stmt->bindParam(':Nombre', $this->Nombre);
-        $stmt->bindParam(':Apellidos', $this->Apellido);
+        $stmt->bindParam(':Apellido', $this->Apellido);
         $stmt->bindParam(':DNI', $this->DNI);
         $stmt->bindParam(':Titulo', $this->Titulacion);
         $stmt->bindParam(':Telefono', $this->Telefono);
