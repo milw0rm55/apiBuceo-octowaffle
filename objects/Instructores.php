@@ -118,28 +118,28 @@ function delete()
 
         return false;
     }
-}
-function read_one_ID_Usuario()
-{
-    // query to read single record
-    $query = "SELECT
+    function read_one_ID_Usuario()
+    {
+        // query to read single record
+        $query = "SELECT
                 *
             FROM
                instructor
             WHERE
                 ID_Usuario = ? ";
-    // prepare query statement
-    $stmt = $this->conn->prepare($query);
-    // bind id of Alumnos to be updated
-    $stmt->bindParam(1, $this->ID_Usuario);
-    // execute query
-    $stmt->execute();
-    // get retrieved row
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    // set values to object properties
-    $this->Nombre = $row['Nombre'];
-    $this->Apellido = $row['Apellidos'];
-    $this->DNI = $row['DNI'];
-    $this->Titulacion = $row['Titulacion'];
-    $this->Telefono = $row['Telefono'];
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+        // bind id of Alumnos to be updated
+        $stmt->bindParam(1, $this->ID_Usuario);
+        // execute query
+        $stmt->execute();
+        // get retrieved row
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        // set values to object properties
+        $this->Nombre = $row['Nombre'];
+        $this->Apellido = $row['Apellidos'];
+        $this->DNI = $row['DNI'];
+        $this->Titulacion = $row['Titulacion'];
+        $this->Telefono = $row['Telefono'];
+    }
 }
