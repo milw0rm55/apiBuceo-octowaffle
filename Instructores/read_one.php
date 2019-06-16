@@ -16,13 +16,11 @@ $db = $database->getConnection();
 
 // prepare alumno object
 $instructor = new Instructores($db);
-echo "AAAAAAAAAAAAAAAAAaa";
 // set ID property of record to read
 $instructor->ID_Instructor = isset($_GET['ID_Instructor']) ? $_GET['ID_Instructor'] : die();
 
 // read the details of alumno to be edited
 $instructor->readOne();
-
 if($instructor->Nombre!=null){
     // create array
     $instructor_arr = array(
