@@ -190,4 +190,19 @@ class Alumnos
 
         return $stmt;
     }
+    function instAl(){
+
+        // select all query
+        $query = "SELECT * FROM alumnos WHERE ID_Instructor";
+
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+
+        $stmt->bindParam(1, $this->ID_Alumno);
+
+        // execute query
+        $stmt->execute();
+
+        return $stmt;
+    }
 }
