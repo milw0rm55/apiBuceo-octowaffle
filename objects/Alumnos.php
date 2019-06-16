@@ -110,7 +110,7 @@ class Alumnos
                 Nombre = :Nombre,
                 Apellidos = :Apellido,
                 DNI = :DNI,
-                Titulo = :Titulo
+                Titulacion = :Titulo
                 Telefono = :Telefono
             WHERE
                 ID_Alumno = :ID_Alumno";
