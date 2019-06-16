@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/objects/Alumnos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="129" column="35" selection-start-line="129" selection-start-column="35" selection-end-line="129" selection-end-column="35" />
+            <state relative-caret-position="326">
+              <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -209,12 +209,12 @@
       <workItem from="1560595253895" duration="15632000" />
       <workItem from="1560633803316" duration="5415000" />
       <workItem from="1560662479514" duration="596000" />
-      <workItem from="1560663536109" duration="4533000" />
+      <workItem from="1560663536109" duration="4640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71083000" />
+    <option name="totallyTimeSpent" value="71190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -411,8 +411,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/objects/Alumnos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="129" column="35" selection-start-line="129" selection-start-column="35" selection-end-line="129" selection-end-column="35" />
+        <state relative-caret-position="326">
+          <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
         </state>
       </provider>
     </entry>
