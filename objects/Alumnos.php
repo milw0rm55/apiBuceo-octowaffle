@@ -134,8 +134,6 @@ class Alumnos
         $stmt->bindParam(':Telefono', $this->Telefono);
         $stmt->bindParam(':ID_Alumno', $this->ID_Alumno);
 
-        // execute the query
-        echo var_dump($stmt->execute());
         if ($stmt->execute()) {
             return true;
         }
