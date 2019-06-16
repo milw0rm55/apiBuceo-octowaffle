@@ -137,7 +137,11 @@ class Alumnos
         // execute the query
         echo var_dump($stmt);
         if ($stmt->execute()) {
+            echo "AAAAAAAAAAAAAAAAAAAA PERRAS";
             return true;
+        }
+        else{
+            echo "EEEEEEEEEEEEEEEEEEEEEEEEEEEE PERROS";
         }
 
         return false;
