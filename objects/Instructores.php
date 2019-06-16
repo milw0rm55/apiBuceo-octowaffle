@@ -36,6 +36,7 @@ class Instructores{
 }
 function readOne()
 {
+    echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
     // query to read single record
     $query = "SELECT
                 *
@@ -44,7 +45,6 @@ function readOne()
             WHERE
                 ID_Instructor = ? ";
     // prepare query statement
-    echo "AAAAAAAAAAAAAAAAAAA x2";
     $stmt = $this->conn->prepare($query);
     // bind id of Alumnos to be updated
     $stmt->bindParam(1, $this->ID_Instructor);
@@ -52,8 +52,6 @@ function readOne()
     $stmt->execute();
     // get retrieved row
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    echo "AAAAAAAAAAAAAAAAA";
-    echo var_dump($row);
     // set values to object properties
     $this->Nombre = $row['Nombre'];
     $this->Apellido = $row['Apellidos'];
