@@ -12,7 +12,7 @@ $db = $database->getConnection();
 
 // initialize object
 $alumnos = new alumnos($db);
-$alumnos->ID_Alumno = isset($_GET['ID_Alumno']) ? $_GET['ID_Alumno'] : die();
+$alumnos->ID_Alumno = isset($_GET['ID_Instructor']) ? $_GET['ID_Instructor'] : die();
 // read alumnoss will be here
 // query alumnoss
 $stmt = $alumnos->instAl();
