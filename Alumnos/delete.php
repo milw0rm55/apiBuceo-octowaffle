@@ -25,12 +25,12 @@ $alumnos->ID_Alumno = $data->ID_Alumno;
 
 // delete the Alumnos
 if($alumnos->delete()){
-
+    echo $alumnos->ID_Alumno;
     // set response code - 200 ok
     http_response_code(200);
 
     // tell the user
-    echo json_encode(array("message" => "Product was deleted."));
+    echo json_encode(array("message" => "Alumno was deleted."));
 }
 
 // if unable to delete the Alumnos
