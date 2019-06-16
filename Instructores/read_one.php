@@ -22,6 +22,7 @@ $instructor->ID_Instructor = isset($_GET['ID_Instructor']) ? $_GET['ID_Instructo
 echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA x2";
 // read the details of alumno to be edited
 $instructor->readOne();
+echo " AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA x3";
 if($instructor->Nombre!=null){
     // create array
     $instructor_arr = array(
