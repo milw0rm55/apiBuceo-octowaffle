@@ -21,7 +21,7 @@ $instructores = new Instructores($db);
 $data = json_decode(file_get_contents("php://input"));
 
 // set Alumnos id to be deleted
-$instructores->id = $data->id;
+$instructores->ID_Instructor = $data->ID_Instructor;
 
 // delete the Alumnos
 if($instructores->delete()){

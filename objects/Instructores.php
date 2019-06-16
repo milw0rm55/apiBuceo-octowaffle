@@ -58,3 +58,21 @@ class Instructores{
         $this->Telefono = $row['Telefono'];
     }
 }
+function delete()
+{
+
+    // delete query
+    $query = "DELETE FROM instructores WHERE ID_Instructor = ?";
+    // prepare query
+    $stmt = $this->conn->prepare($query);
+    // sanitize
+    $this->ID_Alumno=htmlspecialchars(strip_tags($this->ID_Alumno));
+    $stmt->bindParam(1, $this->ID_Alumno);
+    // execute query
+    if ($stmt->execute()) {
+        return true;
+    }
+
+    return false;
+
+}
