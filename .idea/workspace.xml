@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef36909b-d7d7-405b-bdb5-fb3e80842a0d" name="Default Changelist" comment="" />
+    <list default="true" id="ef36909b-d7d7-405b-bdb5-fb3e80842a0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/objects/Instructores.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+            <state relative-caret-position="197">
+              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -142,10 +144,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="height" value="523" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -235,15 +237,16 @@
       <workItem from="1560595253895" duration="15632000" />
       <workItem from="1560633803316" duration="5415000" />
       <workItem from="1560662479514" duration="596000" />
-      <workItem from="1560663536109" duration="13965000" />
+      <workItem from="1560663536109" duration="15003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80515000" />
+    <option name="totallyTimeSpent" value="81553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24496645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -454,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/objects/Instructores.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+        <state relative-caret-position="197">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
         </state>
       </provider>
     </entry>

@@ -77,4 +77,45 @@ function delete()
     return false;
 
 }
+    function update()
+    {
+        // update query
+        $query = "UPDATE
+                instructores
+            SET
+                Nombre = :Nombre,
+                Apellidos = :Apellido,
+                DNI = :DNI,
+                Titulacion = :Titulo,
+                Telefono = :Telefono
+            WHERE
+                ID_Instructor = :ID_Instructor";
+
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+
+        // sanitize
+        $this->Nombre = htmlspecialchars(strip_tags($this->Nombre));
+        $this->Apellido = htmlspecialchars(strip_tags($this->Apellido));
+        $this->DNI = htmlspecialchars(strip_tags($this->DNI));
+        $this->Titulacion = htmlspecialchars(strip_tags($this->Titulacion));
+        $this->Telefono = htmlspecialchars(strip_tags($this->Telefono));
+        $this->ID_Instructor = htmlspecialchars(strip_tags($this->ID_Instructor));
+
+        // bind new values
+        $stmt->bindParam(':Nombre', $this->Nombre);
+        $stmt->bindParam(':Apellido', $this->Apellido);
+        $stmt->bindParam(':DNI', $this->DNI);
+        $stmt->bindParam(':Titulo', $this->Titulacion);
+        $stmt->bindParam(':Telefono', $this->Telefono);
+        $stmt->bindParam(':ID_Alumno', $this->ID_Instructor);
+
+        // execute the query
+        echo var_dump($stmt->execute());
+        if ($stmt->execute()) {
+            return true;
+        }
+
+        return false;
+    }
 }
