@@ -203,7 +203,7 @@ class Alumnos
 
         // execute query
         $stmt->execute();
-
+        echo var_dump($stmt->execute());
         return $stmt;
     }
 }
