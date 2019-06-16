@@ -136,10 +136,9 @@ class Alumnos
     // update the Alumnos
     function update()
     {
-
         // update query
         $query = "UPDATE
-                " . $this->table_name . "
+                alumnos
             SET
                 Nombre = :Nombre,
                 Apellido = :Apellido,
@@ -185,7 +184,7 @@ class Alumnos
         // prepare query
         $stmt = $this->conn->prepare($query);
         // sanitize
-        echo $this->ID_Alumno;
+        $this->ID_Alumno=htmlspecialchars(strip_tags($this->ID_Alumno));
         $stmt->bindParam(1, $this->ID_Alumno);
         // execute query
         if ($stmt->execute()) {
