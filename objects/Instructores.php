@@ -51,6 +51,7 @@ function readOne()
     $stmt->execute();
     // get retrieved row
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    echo "AAAAAAAAAAAAAAAAA";
     echo var_dump($row);
     // set values to object properties
     $this->Nombre = $row['Nombre'];
