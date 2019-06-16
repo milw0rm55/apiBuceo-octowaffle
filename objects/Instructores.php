@@ -36,7 +36,6 @@ class Instructores{
 }
 function readOne()
 {
-    echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
     // query to read single record
     $query = "SELECT
                 *
