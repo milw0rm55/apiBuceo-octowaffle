@@ -57,7 +57,7 @@ class Instructores{
         $this->Titulacion = $row['Titulacion'];
         $this->Telefono = $row['Telefono'];
     }
-}
+
 function delete()
 {
 
@@ -75,4 +75,5 @@ function delete()
 
     return false;
 
+}
 }
