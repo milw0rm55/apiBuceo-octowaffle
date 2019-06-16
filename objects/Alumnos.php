@@ -193,7 +193,7 @@ class Alumnos
     function instAl(){
 
         // select all query
-        $query = "SELECT * FROM alumnos WHERE ID_Instructor";
+        $query = "SELECT * FROM alumnos WHERE ID_Instructor = ?";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
