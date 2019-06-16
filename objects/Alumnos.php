@@ -188,7 +188,7 @@ class Alumnos
 
         // sanitize
         $this->ID_Alumno = htmlspecialchars(strip_tags($this->ID_Alumno));
-
+        echo var_dump($this->ID_Alumno);
         // bind id of record to delete
         $stmt->bindParam(1, $this->ID_Alumno);
 
