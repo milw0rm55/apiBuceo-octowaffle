@@ -130,9 +130,8 @@ function delete()
         // prepare query statement
         $stmt = $this->conn->prepare($query);
         // bind id of Alumnos to be updated
-        echo var_dump($this->ID_Usuario);
         $stmt->bindParam(1, $this->ID_Usuario);
-        echo  var_dump($stmt->execute());
+        echo  var_dump( $stmt->bindParam);
         // execute query
         $stmt->execute();
 
