@@ -19,6 +19,7 @@ $comment = new Coments($db);
 $data = json_decode(file_get_contents("php://input"));
 
 // make sure data is not empty
+echo var_dump($data);
 if(
     !empty($data->ID_Alumno) &&
     !empty($data->ID_Instructor) &&
