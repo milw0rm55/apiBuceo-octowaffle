@@ -23,11 +23,11 @@ echo var_dump($data);
 if(
     !empty($data->ID_Alumno) &&
     !empty($data->ID_Instructor) &&
-    !empty($data->ID_Comentario)
+    !empty($data->Comentario)
 ){
     $comment->ID_Alumno = $data->ID_Alumno;
     $comment->ID_Instructor = $data->ID_Instructor;
-    $comment->ID_Comentario = $data->ID_Comentario;
+    $comment->Comentario = $data->Comentario;
     if($comment->create()){
 
         // set response code - 201 created
