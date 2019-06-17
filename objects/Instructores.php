@@ -87,7 +87,8 @@ function delete()
                 Apellidos = :Apellido,
                 DNI = :DNI,
                 Titulacion = :Titulo,
-                Telefono = :Telefono
+                Telefono = :Telefono,
+                Disponibilidad = :Disponibilidad
             WHERE
                 ID_Instructor = :ID_Instructor";
 
@@ -131,10 +132,9 @@ function delete()
         $stmt = $this->conn->prepare($query);
         // bind id of Alumnos to be updated
         $stmt->bindParam(1, $this->ID_Usuario);
-        echo  var_dump( $this->ID_Usuario);
         // execute query
         $stmt->execute();
-
+        echo var_dump($stmt->execute());
         // get retrieved row
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         // set values to object properties
