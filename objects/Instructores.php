@@ -108,7 +108,7 @@ function delete()
         $stmt->bindParam(':DNI', $this->DNI);
         $stmt->bindParam(':Titulo', $this->Titulacion);
         $stmt->bindParam(':Telefono', $this->Telefono);
-        $stmt->bindParam(':ID_Alumno', $this->ID_Instructor);
+        $stmt->bindParam(':ID_Instructor', $this->ID_Instructor);
 
         // execute the query
         echo var_dump($stmt->execute());
