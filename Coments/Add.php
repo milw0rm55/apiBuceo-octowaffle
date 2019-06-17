@@ -19,7 +19,6 @@ $comment = new Coments($db);
 $data = json_decode(file_get_contents("php://input"));
 
 // make sure data is not empty
-echo var_dump($data);
 if(
     !empty($data->ID_Alumno) &&
     !empty($data->ID_Instructor) &&
@@ -28,6 +27,7 @@ if(
     $comment->ID_Alumno = $data->ID_Alumno;
     $comment->ID_Instructor = $data->ID_Instructor;
     $comment->Comentario = $data->Comentario;
+    echo var_dump($comment);
     if($comment->create()){
 
         // set response code - 201 created
