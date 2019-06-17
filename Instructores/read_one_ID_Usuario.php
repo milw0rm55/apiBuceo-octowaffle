@@ -33,6 +33,7 @@ if($instructor->Nombre!=null){
         "DNI" => $instructor->DNI,
         "Titulacion" => $instructor->Titulacion,
         "Telefono" => $instructor->Telefono,
+        "Disponibilidad" => $instructor->Disponibilidad
 
     );
 
@@ -48,6 +49,6 @@ else{
     http_response_code(404);
 
     // tell the user $alumno does not exist
-    echo json_encode(array("message" => "Alumno does not exist."));
+    echo json_encode(array("message" => "Instructor does not exist."));
 }
 ?>
