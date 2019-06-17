@@ -30,10 +30,22 @@ class Coments
         // prepare query statement
         $stmt = $this->conn->prepare($query);
         // bind id of Alumnos to be updated
-        $stmt->bindParam(1, $this->ID_Instructor);
+        $stmt->bindParam(1, $this->ID_Alumno);
         // execute query
         $stmt->execute();
         // get retrieved row
        return $stmt;
     }
+    function instAl(){
+
+        // select all query
+        $query = "SELECT * FROM comentarios WHERE ID_Alumno = ?";
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(1, $this->ID_Alumno);
+        // execute query
+        $stmt->execute();
+        return $stmt;
+    }
+
 }
