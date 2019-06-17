@@ -18,24 +18,6 @@ class Coments
     {
         $this->conn = $db;
     }
-    function readOne()
-    {
-        // query to read single record
-        $query = "SELECT
-                *
-            FROM
-               comentarios
-            WHERE
-                ID_Alumno = ? ";
-        // prepare query statement
-        $stmt = $this->conn->prepare($query);
-        // bind id of Alumnos to be updated
-        $stmt->bindParam(1, $this->ID_Alumno);
-        // execute query
-        $stmt->execute();
-        // get retrieved row
-       return $stmt;
-    }
     function instAl(){
 
         // select all query
@@ -46,6 +28,29 @@ class Coments
         // execute query
         $stmt->execute();
         return $stmt;
+    }
+    function addComment(){
+        $query = "INSERT INTO
+                comentarios
+            SET
+                ID_Alumno=:ID_Alumno, ID_Instructor=:ID_Instructor, Comentario=:Comentario";
+
+        // prepare query
+        $stmt = $this->conn->prepare($query);
+
+        $this->ID_Alumno = htmlspecialchars(strip_tags($this->ID_Alumno));
+        $this->ID_Instructor = htmlspecialchars(strip_tags($this->ID_Instructor));
+        $this->Comentario = htmlspecialchars(strip_tags($this->Comentario));
+
+        $stmt->bindParam(":ID_Alumno", $this->ID_Alumno);
+        $stmt->bindParam(":ID_Instructor", $this->ID_Instructor);
+        $stmt->bindParam(":Comentario", $this->Comentario);
+        if ($stmt->execute()) {
+            return true;
+        }
+
+        return false;
+
     }
 
 }
