@@ -27,8 +27,6 @@ if(
     $comment->ID_Alumno = $data->ID_Alumno;
     $comment->ID_Instructor = $data->ID_Instructor;
     $comment->Comentario = $data->Comentario;
-    echo var_dump($comment);
-    echo var_dump($comment->addComment());
     if($comment->addComment()){
 
         // set response code - 201 created
