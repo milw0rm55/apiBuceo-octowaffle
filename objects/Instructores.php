@@ -125,7 +125,7 @@ function delete()
         $query = "SELECT
                 *
             FROM
-               instructor
+               instructores
             WHERE
                 ID_Usuario = ? ";
         // prepare query statement
@@ -134,11 +134,11 @@ function delete()
         $stmt->bindParam(1, $this->ID_Usuario);
         // execute query
         $stmt->execute();
-        echo var_dump($stmt->execute());
         // get retrieved row
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         // set values to object properties
         $this->Nombre = $row['Nombre'];
+        $this->ID_Instructor = $row['ID_Instructor'];
         $this->Apellido = $row['Apellidos'];
         $this->DNI = $row['DNI'];
         $this->Titulacion = $row['Titulacion'];
